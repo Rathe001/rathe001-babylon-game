@@ -20,7 +20,7 @@
   "scripts": {
     "lint": "eslint ./src --fix --ext .js,jsx",
     "publishMe": "git push origin `git subtree split --prefix dist master`:gh-pages --force",
-    "build": "PUBLIC_URL=https://astigmapro.com/neurokore npx rimraf ./dist && npx webpack --mode=production --config webpack.prod.js --max-old-space-size=4096",
+    "build": "PUBLIC_URL=https://astigmapro.com/babylon-game npx rimraf ./dist && npx webpack --mode=production --config webpack.prod.js --max-old-space-size=4096",
     "server": "npx webpack-dev-server --config webpack.dev.js",
     "start": "npm run server",
     "test": "tests"
