@@ -1,0 +1,20 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src", "./"]
+      }
+    }
+  },
+  "extends": ["airbnb-base"],
+  "parser": "babel-eslint",
+  "plugins": ["sort-destructure-keys", "sort-keys-fix"],
+  "rules": {
+    "sort-destructure-keys/sort-destructure-keys": 2,
+    "sort-keys-fix/sort-keys-fix": 2
+  }
+}

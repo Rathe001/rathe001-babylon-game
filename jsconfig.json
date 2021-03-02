@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "esnext",
+    "module": "esnext"
+  },
+  "exclude": ["node_modules", "dist", "src/**/*.spec.js"]
+}

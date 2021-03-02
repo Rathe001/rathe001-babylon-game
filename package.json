@@ -1,0 +1,49 @@
+{
+  "name": "babylon-game",
+  "version": "1.0.0",
+  "description": "A game experiment using BabylonJS",
+  "keywords": [
+    "babylon",
+    "game"
+  ],
+  "homepage": "https://github.com/BedfordWest/babylon-game#readme",
+  "bugs": {
+    "url": "https://github.com/BedfordWest/babylon-game/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BedfordWest/babylon-game.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint ./src --fix --ext .js,jsx",
+    "publishMe": "git push origin `git subtree split --prefix dist master`:gh-pages --force",
+    "build": "PUBLIC_URL=https://astigmapro.com/neurokore npx rimraf ./dist && npx webpack --mode=production --config webpack.prod.js --max-old-space-size=4096",
+    "server": "npx webpack-dev-server --config webpack.dev.js",
+    "start": "npm run server",
+    "test": "tests"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^4.1.0",
+    "@babylonjs/inspector": "^4.1.0",
+    "@babylonjs/materials": "^4.1.0",
+    "pepjs": "^0.5.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-sort-destructure-keys": "^1.3.5",
+    "eslint-plugin-sort-keys-fix": "^1.1.1",
+    "html-webpack-plugin": "^4.3.0",
+    "rimraf": "^3.0.2",
+    "terser-webpack-plugin": "^4.1.0",
+    "webpack": "^5.0.0-beta.24",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
