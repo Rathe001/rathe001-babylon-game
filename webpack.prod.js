@@ -6,6 +6,17 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'production',
+  module: {
+    rules: [
+      {
+        loader: 'file-loader',
+        options: {
+          publicPath: '/babylon-game',
+        },
+        test: /\.(png|jpe?g|gif|svg)$/i,
+      },
+    ],
+  },
   optimization: {
     minimize: true,
     minimizer: [new TerserPlugin({
