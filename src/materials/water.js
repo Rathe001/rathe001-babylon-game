@@ -7,7 +7,7 @@ import sphere from 'objects/sphere';
 import skybox from 'objects/skybox';
 
 const water = new WaterMaterial('water', scene);
-water.bumpTexture = new Texture('/babylon-game/images/water.jpg', scene);
+water.bumpTexture = new Texture('/rathe001-babylon-game/images/water.jpg', scene);
 water.windForce = 3;
 water.waveHeight = 0.3;
 water.bumpHeight = 0.3;

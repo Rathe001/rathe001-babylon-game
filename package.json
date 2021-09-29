@@ -1,18 +1,18 @@
 {
-  "name": "babylon-game",
+  "name": "rathe001-babylon-game",
   "version": "1.0.0",
   "description": "A game experiment using BabylonJS",
   "keywords": [
     "babylon",
     "game"
   ],
-  "homepage": "https://github.com/BedfordWest/babylon-game#readme",
+  "homepage": "https://github.com/Rathe001/rathe001-babylon-game#readme",
   "bugs": {
-    "url": "https://github.com/BedfordWest/babylon-game/issues"
+    "url": "https://github.com/Rathe001/rathe001-babylon-game/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BedfordWest/babylon-game.git"
+    "url": "git+https://github.com/Rathe001/rathe001-babylon-game.git"
   },
   "license": "ISC",
   "author": "",
@@ -20,7 +20,7 @@
   "scripts": {
     "lint": "eslint ./src --fix --ext .js,jsx",
     "publishMe": "git push origin `git subtree split --prefix dist master`:gh-pages --force",
-    "build": "PUBLIC_URL=https://astigmapro.com/babylon-game npx rimraf ./dist && npx webpack --mode=production --config webpack.prod.js",
+    "build": "PUBLIC_URL=https://astigmapro.com/rathe001-babylon-game npx rimraf ./dist && npx webpack --mode=production --config webpack.prod.js",
     "server": "npx webpack serve --config webpack.dev.js",
     "start": "npm run server",
     "test": "tests"

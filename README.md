@@ -1,4 +1,4 @@
-# babylon-game
+# rathe001-babylon-game
 
 ## Installation
 1. Clone repo
