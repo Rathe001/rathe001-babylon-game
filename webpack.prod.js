@@ -20,7 +20,7 @@ module.exports = {
   },
   output: {
     filename: '[name].[chunkhash].js',
-    publicPath: '/babylon-game',
+    publicPath: '/rathe001-babylon-game',
   },
   performance: {
     hints: false,
